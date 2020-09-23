@@ -38,7 +38,7 @@ class ESPCAM {
   public:
     ESPCAM();
     void Begin();
-    void TakePictureFever();
+    void TakePicture();
 
   private:
     camera_config_t config;

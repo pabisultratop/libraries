@@ -76,7 +76,7 @@ bool checkPhoto( fs::FS & fs ) {
   return ( pic_sz > 100 );
 }
 
-void ESPCAM::TakePictureFever() {
+void ESPCAM::TakePicture() {
   camera_fb_t * fb = NULL; // pointer
   bool ok = 0; // Boolean indicating if the picture has been taken correctly
 

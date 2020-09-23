@@ -10,11 +10,11 @@ int Connect::Begin(const char* ssid, const char* password, const char* host)
   if (!Wifi(ssid, password))
     return 0;
 
-//  if (!DNS(host))
-//    return 0;
-//
-//  if (!OTAServer())
-//    return 0;
+  if (!DNS(host))
+	return 0;
+
+  if (!OTAServer())
+	return 0;
 
   return 1;
 }
